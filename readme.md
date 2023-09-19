@@ -9,3 +9,4 @@ achievments:
 - use of loops
 - use of strings
 - use of conditionals ( to stop rotating the text, also use of events?)
+- getting input (without get/post methods)
