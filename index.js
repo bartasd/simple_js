@@ -1,0 +1,1 @@
+document.getElementById("your_name").innerHTML = prompt("Please enter your name: ");
