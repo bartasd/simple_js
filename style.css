@@ -1,3 +1,12 @@
 h2 {
-    background-color: blue;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    font-size: 74px;
+    font-style: comic;
+}
+
+body {
+    background-color: plum;
 }
