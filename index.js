@@ -1,39 +1,33 @@
-// REMARKS: "element" should be initiated by const variable,
-// or it must be used inside the IIFE function...
+const myName = "Bartas";
 
-// PUT YOUR NAME ON THE SCREEN
-const myName = prompt("Please enter your name: ");
+const random = () =>  Math.floor(Math.random() * 4 );
 
-//const el1 = document.getElementById("q1");
-const element = document.querySelector('#q1 p');
-element.innerHTML = myName;
-
-
-// rotate text
-const keyframe = [
-  { transform: "rotate(0)" },
-  { transform: "rotate(360deg)" },
-];
-
-const effect = {
-  duration: 5000,
-  iterations: Infinity,
-};
-
-element.addEventListener("click", () => {
-  // https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Keyframe_Formats
-  // keyframe keyframe options
-  element.animate(keyframe, effect);
-});
-
-/*
-function changeElement(arg) {
-  let quarter = (Math.floor(Math.random() * 100)) % 4 + 1;
-  quarter = "q" + quarter;
-  arg = document.getElementById(quarter);
-  arg.innerHTML = myName;
-  
+function afterClick(i){
+  if (text[i].innerHTML === myName)
+  {
+    text[i].innerHTML = '';
+    let rn = null;
+    do {
+      rn = random();
+    } while (rn === i);
+    text[rn].innerHTML = myName;
+  }
+  else
+  {
+    text[i].innerHTML = myName;
+    for(let a = 0; a < 4; a++)
+    {
+      if(text[a].innerText === myName && a !== i)
+        text[a].innerText = '';
+    }
+  }
 }
 
-changeElement(element);
-*/
+const div = document.querySelectorAll('div');
+const text = document.querySelectorAll('p');
+for(let i = 0; i < 4; i++)
+{
+  div[i].addEventListener("click", function onClick() {
+    afterClick(i);
+  });
+}

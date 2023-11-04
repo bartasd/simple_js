@@ -1,0 +1,15 @@
+{
+  "name": "simple_js",
+  "version": "1.0.0",
+  "description": "program task is simple:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=4614"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dead-server": "^1.0.9"
+  }
+}

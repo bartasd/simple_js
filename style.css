@@ -1,22 +1,41 @@
+body{
+    position: relative;
+}
+
 div {
     font-size: 72px;
-    display: inline-block;
+    display: flex;
     width: 48vw;
     height: 48vh;
+    align-items: center;
+    justify-content: center;
 }
 
 #q1 {
+    position: absolute;
     background-color: purple;
 }
 
 #q2 {
+    position: absolute;
     background-color: green;
+    left: calc(48vw + 2px);
 }
 
 #q3 {
+    position: absolute;
     background-color: yellow;
+    top: calc(48vh + 2px);
 }
 
 #q4 {
+    position: absolute;
     background-color: red;
+    left: calc(48vw + 2px);
+    top: calc(48vh + 2px);
+}
+
+p{
+    margin: 0;
+
 }
