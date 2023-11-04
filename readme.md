@@ -1,12 +1,10 @@
 program task is simple:
 
 wrote a simple program, that takes your name as an input
-displays that name on screen rotating it while you not hit an any button.
+displays and moves it from one place to another using strict instructions.
 
 achievments:
 
---- variable initialization
---- use of loops
---- use of strings
---- use of conditionals ( to stop rotating the text, also use of events?)
---- getting input (without get/post methods)
+* use of loops in event listeners
+* select an element with mouse / select random elemenet when selected-selected.
+* getting input with promt
