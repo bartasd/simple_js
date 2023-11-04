@@ -2,6 +2,8 @@
 * Wrote a simple program, that takes your name as an input
 displays and moves it from one place to another using strict instructions.
 
+# You can preview the program [**here**](https://bartasd.github.io/simple_js/)
+
 # What program actually does:
 * Takes your name in promt:
 * Then you have select one of a quarters where you want to put your name.
