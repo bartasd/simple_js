@@ -1,4 +1,4 @@
-const myName = "Bartas";
+const myName = prompt('Please enter your name:');
 
 const random = () =>  Math.floor(Math.random() * 4 );
 
